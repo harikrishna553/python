@@ -8,12 +8,14 @@ data = {'Name': ['Krishna', 'Ram', 'Joel', 'Gopi', 'Jitendra', "Raj"],
 df = pd.DataFrame(data)
 print(df)
 
-print('\nAdd new columns Age_plus_10, Age_minus_10')
+print('\nAdd new columns Age_plus_10')
 df['Age_plus_10'] = df['Age'] + 10
 print(df)
 
+print('\nAdd new columns Age_minus_10')
 df['Age_minus_10'] = df['Age'].sub(10)
 print(df)
 
+print('\nAdd new columns City_in_upper_case')
 df['City_in_upper_case'] = df['City'].str.upper()
 print(df)
