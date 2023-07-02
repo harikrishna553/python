@@ -2,7 +2,7 @@
 import pandas as pd
 
 # Specify the file path to the CSV file relative to the project directory.
-file_path = '../../data/csv/ipl_matches.csv'
+file_path = '../../../data/csv/ipl_matches.csv'
 
 # Set options to display all columns and increase the maximum width to print the columns in same row
 pd.set_option('display.max_columns', None)
