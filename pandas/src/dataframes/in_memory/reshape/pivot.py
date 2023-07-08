@@ -10,5 +10,5 @@ df = pd.DataFrame(data)
 print('Original DataFrame')
 print(df)
 
-new_df = df.pivot(index=['Education', 'Age'], columns=['City', 'Gender'], values = ['Name'])
+new_df = df.pivot(index=['Education'], columns=['City', 'Gender', 'Age'], values = ['Name'])
 print('\nnew_df\n',new_df)
