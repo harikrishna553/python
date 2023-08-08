@@ -144,3 +144,5 @@ for counter in range(no_of_times_to_loop):
 
 plot_predictions(X_training_set, Y_training_set, X_test_set, Y_test_set, Y_test_predictions)
 print(metric.to_string())
+
+print('Initial Model parameters : ', first_model.state_dict())
