@@ -53,9 +53,9 @@ years_to_predict = [2020, 2021, 2022, 2023]
 future_years = pd.DataFrame({'year': years_to_predict})
 
 # Predict the per capita income for the future years
-predicted_per_capita_income = model.predict(future_years)
+future_years_per_capita_income = model.predict(future_years)
 
 # Add the predictions to the DataFrame
-future_years['income'] = predicted_per_capita_income
+future_years['income'] = future_years_per_capita_income
 
-print(future_years)
+print('\n', future_years)
