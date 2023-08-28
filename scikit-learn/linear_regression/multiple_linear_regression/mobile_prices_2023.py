@@ -1,7 +1,5 @@
-import pandas as pd
 import os
 import pandas as pd
-import matplotlib.pyplot as plt
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error
 from sklearn.model_selection import train_test_split
@@ -10,7 +8,6 @@ from sklearn.preprocessing import StandardScaler, MinMaxScaler
 from datetime import datetime
 
 csv_file = os.getcwd() + '/../../data/csvs/mobile_prices_2023.csv'
-print(csv_file)
 
 input_data_set = pd.read_csv(csv_file)
 df = input_data_set
@@ -22,6 +19,18 @@ def clean_and_transform_data(df):
     # Drop duplicates
     df = df.drop_duplicates()
 
+    # Use LabelEncoder to convert categories to numerical labels
+    label_encoder = LabelEncoder()
+
+    # Extract brand names and convert the names to numerical labels
+    df['Brand Label'] = df['Phone Name'].apply(lambda x: x.split()[0])
+    df['Brand Label'] = label_encoder.fit_transform(df['Brand Label'])
+
+    # Normalize ratings
+    df['Number of Ratings'] = df['Number of Ratings'].str.replace(',', '').astype(float)
+    scaler = MinMaxScaler()
+    df['Number of Ratings'] = scaler.fit_transform(df[['Number of Ratings']])
+
     # Convert the column 'Price in INR' to float
     df['Price in INR'] = df['Price in INR'] \
         .str.replace(',', '') \
@@ -31,20 +40,8 @@ def clean_and_transform_data(df):
     df['RAM'] = df['RAM'].str.extract('(\d+)').astype(float)
     df['ROM/Storage'] = df['ROM/Storage'].str.extract('(\d+)').astype(float)
 
-    # Normalize ratings
-    df['Number of Ratings'] = df['Number of Ratings'].str.replace(',', '').astype(float)
-    scaler = MinMaxScaler()
-    df['Number of Ratings'] = scaler.fit_transform(df[['Number of Ratings']])
-
     # Convert 'Date' to Unix timestamps
     df['Date of Scraping'] = df['Date of Scraping'].apply(lambda x: datetime.strptime(x, '%Y-%m-%d').timestamp())
-
-    # Working with phone names.
-    # Extract brand names
-    df['Brand Label'] = df['Phone Name'].apply(lambda x: x.split()[0])
-    # Use LabelEncoder to convert brand names to numerical labels
-    label_encoder = LabelEncoder()
-    df['Brand Label'] = label_encoder.fit_transform(df['Brand Label'])
 
     # Extract battery capacity
     df['Battery Capacity'] = df['Battery'].str.extract(r'(\d+) mAh')
@@ -98,7 +95,7 @@ print("Mean Squared Error:", mse)
 
 
 # Test
-test_samples = input_data_set.loc[[20, 35]]
+test_samples = input_data_set.loc[[20, 35, 320, 345]]
 new_rows_to_test = test_samples
 new_rows_to_test = clean_and_transform_data(new_rows_to_test)
 new_rows_to_test = new_rows_to_test.drop(['Price in INR'], axis=1)
