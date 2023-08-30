@@ -1,0 +1,309 @@
+log_message,severity
+Disk space is critically low,critical
+Network connection lost,critical
+Application started,info
+Database query executed successfully,info
+Disk space is critically low,critical
+Memory usage is reaching 90%,info
+Network connection is lost,critical
+Application is not responding,critical
+User is trying to access unauthorized resource	error,info
+Database connection is closed unexpectedly	error,critical
+Server is restarted unexpectedly,critical
+SQLServer database connection failed,critical
+GCP bucket is full,critical
+Log service is down,critical
+Application is crashing,critical
+Service is unavailable,critical
+API is returning errors,critical
+Started Spring Boot microservice,info
+Connected to SQLServer database,info
+Uploaded data to GCP bucket,info
+Logged message to log service,info
+Application is running normally,info
+Service is available,info
+API is returning responses,info
+SQLServer database connection timed out,critical
+GCP bucket quota exceeded,critical
+Log service is not reachable,critical
+Application is not responding to requests,critical
+Service is unavailable due to internal error,critical
+API is returning 500 errors,critical
+Started Spring Boot microservice with id 123456,info
+Connected to SQLServer database with name mydb,info
+Uploaded data to GCP bucket with name mybucket,info
+Logged message to log service with level INFO,info
+Application is running normally with 200 active connections,info
+Service is available with 99.9% uptime,info
+API is returning responses with average latency of 100 milliseconds,info
+Application started successfully,info
+Failed to connect to the database,critical
+User authentication successful,info
+Error: File not found,warning
+API request timed out,warning
+Database connection established,info
+Null pointer exception occurred,critical
+Configuration loaded from file,info
+Invalid input data,warning
+Disk space is critically low,critical
+Database connection failed,critical
+Application is crashing,critical
+User is trying to access unauthorized resource,critical
+message,label
+Database connection failed,critical
+NullPointerException at line 56,critical
+Out of memory error,critical
+Server crashed unexpectedly,critical
+Authentication server not responding,critical
+Server disk space exceeded limit,critical
+SQL injection vulnerability detected,critical
+Critical security patch not applied,critical
+Server response time exceeded threshold,critical
+Application started successfully,info
+User logged in from IP address 192.168.1.1,info
+Configuration file loaded,info
+Database backup completed,info
+Request processing time: 150ms,info
+Resource usage within normal limits,info
+Payment transaction completed,info
+Cache cleared,info
+User session expired,warning
+Disk space running low,warning
+System response time slow,warning
+Potential security breach detected,warning
+Connection to external server timed out,warning
+Database connection slow,warning
+Memory usage close to limit,warning
+Started application with ID 123456,info
+Connected to database with name mydb,info
+Uploaded data to GCP bucket with name mybucket,info
+Logged message to log service with level INFO,info
+Application is running normally with 200 active connections,info
+Service is available with 99.9% uptime,info
+API is returning responses with average latency of 100 milliseconds,info
+Low disk space available,critical
+Database connection timed out,warning
+Log service is not reachable,warning
+Application is not responding to requests,warning
+Service is unavailable due to internal error,warning
+API is returning 500 errors,warning
+Memory usage is reaching 90%,critical
+CPU usage is reaching 100%,critical
+Network connection is lost,critical
+Application is not responding,critical
+Service is unavailable,critical
+API is returning errors,critical
+Database is corrupted,critical
+File system is corrupt,critical
+Security breach detected,critical
+Malware detected,critical
+Denial-of-service attack detected,critical
+Low disk space available,critical
+Database connection timed out,warning
+Log service is not reachable,warning
+Application is not responding to requests,warning
+Service is unavailable due to temporary error,warning
+API is returning 500 errors,warning
+Memory usage is reaching 80%,warning
+CPU usage is reaching 90%,warning
+Network connection is unstable,warning
+Application is generating too many logs,warning
+Service is under heavy load,warning
+Low disk space available,warning
+Database connection timed out,warning
+Log service is not reachable,warning
+Application is not responding to requests,warning
+Service is unavailable due to temporary error,warning
+API is returning 500 errors,warning
+Memory usage is reaching 80%,warning
+CPU usage is reaching 90%,warning
+Network connection is unstable,warning
+Application is generating too many logs,warning
+Service is under heavy load,warning
+New user registered,info
+Application updated to version 2.0,info
+Cache refreshed,info
+Scheduled maintenance completed,info
+Payment received for order #12345,info
+Configuration changes applied,info
+Backup successful,info
+User profile updated,info
+Data synchronization completed,info
+File uploaded successfully,info
+Disk space usage optimized,info
+Network connection established,info
+Database query executed,info
+API request successful,info
+Resource allocation adjusted,info
+Service restart initiated,warning
+Unusual login activity detected,warning
+System memory usage high,warning
+Error while processing request,warning
+External API slow to respond,warning
+Unresponsive database query,warning
+File not found,warning
+Server load increased,warning
+Potential data inconsistency detected,warning
+Failed login attempts from IP address 192.168.1.2,warning
+Database connection unstable,warning
+Application response time degraded,warning
+Invalid input data,warning
+Too many open connections,warning
+Low battery level,warning
+Unauthorized access attempt,warning
+Backup partially completed,warning
+Failed to send email notifications,warning
+CPU usage spiked,warning
+Memory leak detected,warning
+Unrecognized command received,warning
+Missing required fields in request,warning
+Network latency increased,warning
+Service degradation observed,warning
+Stale cache entries detected,warning
+API rate limit exceeded,warning
+Incorrect configuration settings,warning
+Unexpected server shutdown,warning
+Server log flooded with repeated error messages,warning
+Failed to start background task,warning
+Unverified user access,warning
+Inconsistent data in database,warning
+Disk read/write errors,warning
+New feature implemented: chat module,info
+User preferences updated,info
+Backup completed: 10 files backed up,info
+Database index rebuilt,info
+Notification sent to user ID 9876,info
+Resource usage optimized,info
+Scheduled maintenance in progress,info
+Payment processing initiated,info
+Data import successful,info
+File download completed,info
+Network connection stable,info
+Database table created,info
+API endpoint added: /v1/users,info
+Security patch applied,info
+API request authorized,info
+Server memory cleared,info
+Service availability checked,info
+Failed login attempt from IP address 192.168.1.3,warning
+Disk space usage approaching limit,warning
+System error occurred,warning
+External service degraded,warning
+High CPU load detected,warning
+User input validation failed,warning
+Database query timeout,warning
+Resource allocation exceeded,warning
+File corruption detected,warning
+Network disruption detected,warning
+Service slowdown observed,warning
+API response time increased,warning
+Software update pending,warning
+Server log size exceeds threshold,warning
+Server process crashed,warning
+Unexpected API response,warning
+Inconsistent data synchronization,warning
+Expired SSL certificate,warning
+Insufficient permissions for operation,warning
+Excessive concurrent connections,warning
+User session termination,info
+Application is using more memory than expected,critical
+Application is using more CPU than expected,critical
+Application is generating more logs than expected,critical
+Application is not handling requests in a timely manner,critical
+Application is not responding to health checks,critical
+Application is crashing frequently,critical
+Application is being attacked by a malicious user,critical
+Application is being used for illegal purposes,critical
+Application is not meeting performance requirements,critical
+Application is not meeting security requirements,critical
+Application is using more memory than usual,warning
+Application is using more CPU than usual,warning
+Application is generating more logs than usual,warning
+Application is taking longer to respond to requests than usual,warning
+Application is not responding to health checks as often as usual,warning
+Application is crashing more often than usual,warning
+Application is being attacked by a suspicious user,warning
+Application is being used for suspicious purposes,warning
+Application is not meeting performance expectations,warning
+Application is not meeting security expectations,warning
+Application started successfully,info
+Application connected to database successfully,info
+Application uploaded data to GCP bucket successfully,info
+Application logged message to log service successfully,info
+Application is running normally,info
+Service is available,info
+API is returning responses with average latency of 100 milliseconds,info
+Maintenance scheduled for next week,info
+Configuration file updated,info
+New software installed,info
+Application is using more memory than allowed,critical
+Application is using more CPU than allowed,critical
+Application is generating more logs than allowed,critical
+Application is not handling requests in a timely manner,critical
+Application is not responding to health checks,critical
+Application is crashing constantly,critical
+Application is being attacked by a sophisticated user,critical
+Application is being used for malicious purposes,critical
+Application is not meeting performance SLAs,critical
+Application is not meeting security SLAs,critical
+New user registration: John Doe,info
+Authentication successful for user ID 5678,info
+Data export completed: 500 records exported,info
+Database optimization executed,info
+Notification sent to all users,info
+Resource usage monitored,info
+Scheduled maintenance completed successfully,info
+Payment confirmation received,info
+Data backup and archiving initiated,info
+File upload completed: image.jpg,info
+Network connectivity restored,info
+New database entry created,info
+API documentation updated,info
+Security audit completed,info
+API request validated,info
+Server disk space cleaned,info
+Service metrics collected,info
+Failed login attempt from IP address 192.168.1.4,warning
+Low disk space warning,warning
+System instability detected,warning
+External API unresponsive,warning
+Excessive memory consumption,warning
+Input data validation bypassed,warning
+Database connection slow,warning
+Resource allocation imbalance,warning
+File not accessible,warning
+Network performance degraded,warning
+Service response time exceeded,warning
+Pending software patches,warning
+Server log errors detected,warning
+Service unavailability observed,warning
+Invalid API request received,warning
+Inconsistent data replication,warning
+SSL certificate expiration,warning
+Access permission revoked,warning
+Resource contention issue,warning
+User session expiration,warning
+API request rate exceeded,warning
+Configuration file missing,warning
+Database deadlock detected,warning
+Low disk space alert,warning
+Failed to generate report,warning
+Data transformation error,warning
+Resource utilization spike,warning
+Unauthorized access detected,warning
+File deletion error,warning
+Network congestion,warning
+Server process slowdown,warning
+User authentication failed,warning
+API response inconsistency,warning
+Insecure communication detected,warning
+Failed database transaction,warning
+File modification detected,warning
+Data validation anomalies,warning
+DNS resolution failure,warning
+Excessive API error responses,warning
+Service degradation suspected,warning
+Security vulnerability identified,warning
+User access restriction bypassed,warning
+Service restart failure,warning
+
