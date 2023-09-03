@@ -1,4 +1,3 @@
-import os
 import pandas as pd
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error
@@ -7,7 +6,7 @@ from sklearn.preprocessing import LabelEncoder
 from sklearn.preprocessing import StandardScaler, MinMaxScaler
 from datetime import datetime
 
-csv_file = os.getcwd() + '/../../data/csvs/mobile_prices_2023.csv'
+csv_file = 'mobile_prices_2023.csv'
 
 input_data_set = pd.read_csv(csv_file)
 df = input_data_set
@@ -58,12 +57,13 @@ def clean_and_transform_data(df):
     df['Front Camera MP'] = pd.to_numeric(df['Front Camera MP'], errors='coerce')
 
     df = df.dropna()
-    df = df.drop(['Phone Name', 'Battery', 'Back/Rare Camera', 'Front Camera'], axis=1)
 
     columns_to_encode = ["Brand Label", "Processor"]
     label_encoder = LabelEncoder()
     for i in columns_to_encode:
         df[i] = label_encoder.fit_transform(df[i])
+
+    df = df.drop(['Phone Name', 'Battery', 'Back/Rare Camera', 'Front Camera'], axis=1)
 
     return df
 
@@ -92,7 +92,6 @@ mse = mean_squared_error(y_test, y_pred)
 print("Coefficients:", model.coef_)
 print("Intercept:", model.intercept_)
 print("Mean Squared Error:", mse)
-
 
 # Test
 test_samples = input_data_set.loc[[20, 35, 320, 345]]
