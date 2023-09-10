@@ -4,7 +4,6 @@ import numpy as np
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score
-from sklearn.preprocessing import MinMaxScaler
 
 # Adjust display options to show all rows and columns
 pd.set_option('display.max_rows', None)
