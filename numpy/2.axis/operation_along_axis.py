@@ -5,10 +5,8 @@ arr = np.array([
     [4, 5, 6],
     [7, 8, 9]])
 
-print('array1 axes : ', arr.ndim)
-
 sum_along_the_row = np.sum(arr, axis=0)
 sum_along_the_column = np.sum(arr, axis=1)
 
-print('\nsum_along_the_row : ', sum_along_the_row)
+print('sum_along_the_row : ', sum_along_the_row)
 print('sum_along_the_column : ', sum_along_the_column)
