@@ -1,0 +1,6 @@
+# Ignore PyCharm project files and folders
+.idea/
+*.iml
+*.ipr
+*.iws
+
