@@ -17,9 +17,9 @@ while True:
     if is_true == False:
         break
 
-    frame = resize_frame(frame, 1.4, 0.7)
+    new_frame = resize_frame(frame, 0.3, 0.2)
     # Show the frame
-    cv.imshow('bird video', frame)
+    cv.imshow('bird video', new_frame)
 
     # If the letter x is pressed then come out of video
     if (cv.waitKey(20) & 0xFF) == ord('x'):
