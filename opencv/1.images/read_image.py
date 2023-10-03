@@ -1,5 +1,6 @@
 import cv2 as cv
 
+
 # Read the image as matrix of pixels
 image_data = cv.imread('photos/tiger.png')
 print(f'type of image_data  is {type(image_data)}')
