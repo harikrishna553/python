@@ -1,12 +1,17 @@
 import cv2 as cv
 
 # Read the image as matrix of pixels
-original_image = cv.imread('photos/tiger.png')
-grayed_image = cv.imread('photos/tiger.png', cv.IMREAD_GRAYSCALE)
+frame = cv.imread('photos/tiger.png')
+
+# Get the height and width of the image
+height = frame.shape[0]
+width = frame.shape[1]
+
+print(f'height : {height}')
+print(f'width : {width}')
 
 # Display the image in new window
-cv.imshow('original_image', original_image)
-cv.imshow('grayed_image', grayed_image)
+cv.imshow('Tiger', frame)
 
 # Wait for Infinite amount of time for a keyboard key to be pressed
 cv.waitKey(0)
