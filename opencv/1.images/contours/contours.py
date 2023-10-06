@@ -2,7 +2,7 @@ import cv2 as cv
 import numpy as np
 
 image = cv.imread('bear.jpeg')
-cv.imshow('Puppies', image)
+cv.imshow('Bear', image)
 
 # Convert this image to grayscale
 grayscale_image = cv.cvtColor(image, cv.COLOR_BGR2GRAY)
@@ -32,8 +32,6 @@ max_contour_index = contour_index
 
 for contour in range(len(contours)):
     contour_index = contour_index + 1
-
-
 
 blank_image = np.zeros(image.shape, dtype='uint8')
 
