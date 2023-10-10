@@ -1,13 +1,14 @@
 import cv2 as cv
+import numpy as np
 
 image = cv.imread('gateway_of_india.png')
+gray_image = cv.cvtColor(image, cv.COLOR_BGR2GRAY)
+lap = cv.Laplacian(gray_image, -1)
+lap = np.uint8(np.absolute(lap))
+
 cv.imshow('Original image', image)
-
-canny = cv.Canny(image, 120, 150)
-cv.imshow('Original image with threshold 120 and 150', canny)
-
-canny = cv.Canny(image, 120, 400)
-cv.imshow('Original image with threshold 120 and 400', canny)
+cv.imshow('Gray image', gray_image)
+cv.imshow('Laplacian image', lap)
 
 cv.waitKey(0)
 
