@@ -2,14 +2,14 @@ import os
 import cv2 as cv
 import numpy as np
 
-haar_cascade = cv.CascadeClassifier('haarcascade_frontalface_default.xml')  # Corrected the file name
+haar_cascade = cv.CascadeClassifier('haarcascade_frontalface_default.xml')
 
 peoples = ['Dhoni', 'Sehwag']
 
 features = []
 labels = []
 
-def train():
+def populate_face_rect_and_label():
     for person in peoples:
         path = os.path.join('.', person)
         label = peoples.index(person)
@@ -19,14 +19,13 @@ def train():
 
             image_array = cv.imread(img_path)
             gray_scaled_image = cv.cvtColor(image_array, cv.COLOR_BGR2GRAY)
-            faces_rectangle = haar_cascade.detectMultiScale(gray_scaled_image, scaleFactor=1.3, minNeighbors=5)
+            faces_rectangle = haar_cascade.detectMultiScale(gray_scaled_image, scaleFactor=1.1, minNeighbors=7)
             for (a, b, c, d) in faces_rectangle:
                 face_array = gray_scaled_image[b:b+d, a:a+c]
                 features.append(face_array)
                 labels.append(label)
 
-train()
-print('Training is done')
+populate_face_rect_and_label()
 
 face_recognizer = cv.face_LBPHFaceRecognizer.create()  # Use create() to create the recognizer
 
@@ -34,7 +33,7 @@ features = np.array(features, dtype='object')
 labels = np.array(labels, dtype='int')  # Use 'int' instead of 'uint8'
 
 face_recognizer.train(features, labels)
-face_recognizer.save('trained_face_recognizer.yml')  # Save the trained model
+# face_recognizer.save('trained_face_recognizer.yml')  # Save the trained model
 
 image_to_test = cv.imread('img_to_test.png')
 gray_scale_image_to_test = cv.cvtColor(image_to_test, cv.COLOR_BGR2GRAY)
