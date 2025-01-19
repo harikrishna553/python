@@ -42,16 +42,15 @@ vectorDb = Chroma.from_documents(
 )
 #print("done adding to vector database....")
 
+
+from langchain_ollama import ChatOllama
+llm = ChatOllama(model=model)
+
 ## Retrieval
 from langchain.prompts import ChatPromptTemplate, PromptTemplate
 from langchain_core.output_parsers import StrOutputParser
-
-from langchain_ollama import ChatOllama
 from langchain_core.runnables import RunnablePassthrough
 from langchain.retrievers.multi_query import MultiQueryRetriever
-
-# Set the model
-llm = ChatOllama(model=model)
 
 queryPrompt = PromptTemplate(
     input_variables=["question"],
@@ -86,5 +85,6 @@ chain = (
 # res = chain.invoke(
 #     input=("what are the main points as a business owner I should be aware of?",)
 # )
-res = chain.invoke(input=("What is Yearly dividend for Doom industries?"))
+#res = chain.invoke(input=("What is Yearly dividend for Doom industries?"))
+res = chain.invoke(input=("Summarize about time machine and doom industries?"))
 print(res)
