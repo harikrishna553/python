@@ -11,13 +11,13 @@ model = "llama3.2"
 if documentPath:
     loader = UnstructuredPDFLoader(file_path=documentPath)
     data = loader.load()
-    #print("Done loading the pdf file")
+    print("Done loading the pdf file")
 else:
     print("Upload a PDF file")
 
 # Preview First few line of the pdf document
 content = data[0].page_content
-#print(content[:100])
+print(content[:100])
 
 # Extract the text from pdf file and split into small chunks
 from langchain_ollama import OllamaEmbeddings
@@ -27,9 +27,9 @@ from langchain_community.vectorstores import Chroma
 # Split Chunk
 textSplitter = RecursiveCharacterTextSplitter(chunk_size=600, chunk_overlap=300)
 chunks = textSplitter.split_documents(data)
-#print("Done Splitting....")
-#print(f"Total Chunks are {len(chunks)}")
-#print(f"First Chunk {chunks[0]}")
+print("Done Splitting....")
+print(f"Total Chunks are {len(chunks)}")
+print(f"First Chunk {chunks[0]}")
 
 # Add embedding model
 import ollama
@@ -85,6 +85,6 @@ chain = (
 # res = chain.invoke(
 #     input=("what are the main points as a business owner I should be aware of?",)
 # )
-#res = chain.invoke(input=("What is Yearly dividend for Doom industries?"))
-res = chain.invoke(input=("Summarize about time machine and doom industries?"))
+res = chain.invoke(input=("What is Yearly dividend for Doom industries?"))
+#res = chain.invoke(input=("Summarize about time machine and doom industries?"))
 print(res)
