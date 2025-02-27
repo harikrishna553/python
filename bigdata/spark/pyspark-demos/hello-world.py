@@ -1,7 +1,9 @@
 from pyspark.sql import SparkSession
 
 # Create a Spark session
-spark = SparkSession.builder.appName("EmployeesExample").getOrCreate()
+spark = (SparkSession.builder.appName("EmployeesExample")
+.master('local[3]')
+.getOrCreate())
 
 # Sample employee data (ID, Name, Age, Department, Salary)
 data = [
