@@ -1,0 +1,4 @@
+25/03/06 16:06:38 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes
+25/03/06 16:07:10 INFO SparkContext: Running Spark version 3.0.1
+25/03/06 16:07:45 ERROR TaskSchedulerImpl: Lost executor 1 on worker-node: Executor heartbeat timed out
+25/03/06 16:08:15 DEBUG DAGScheduler: Submitting 5 missing tasks from stage 2
