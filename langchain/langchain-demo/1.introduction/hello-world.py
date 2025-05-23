@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 import os
 
 def main():
-    # Load environment variables
+    # Load environment variables 
     load_dotenv()
 
     # Use Ollama with the LLaMA 3.2 model
