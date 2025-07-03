@@ -3,7 +3,7 @@ from pyspark.sql import SparkSession
 # Step 1: Initialize Spark Session
 spark = (SparkSession.builder
     .appName("PySpark MySQL Example")
-    .config("spark.jars", "/Users/h0g01ex/Downloads/mysql-connector-j-9.2.0.jar")  # Update path
+    .config("spark.jars", "/Users/krishna/Downloads/mysql-connector-j-9.2.0.jar")  # Update path
     .getOrCreate())
 
 # Step 2: MySQL Database Connection Details

@@ -1,11 +1,11 @@
 ----------------------------------------------------------------
 Thu Mar 06 15:36:38 IST 2025:
 Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-0195-6aeb-e0c9-000002c70128 
-on database directory /Users/h0g01ex/Documents/Sourcecode/personal/python/bigdata/spark/pyspark-demos/metastore_db with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@5ffd2b27 
-Loaded from file:/Users/h0g01ex/Library/Python/3.9/lib/python/site-packages/pyspark/jars/derby-10.14.2.0.jar
+on database directory /Users/krishna/Documents/Sourcecode/personal/python/bigdata/spark/pyspark-demos/metastore_db with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@5ffd2b27 
+Loaded from file:/Users/krishna/Library/Python/3.9/lib/python/site-packages/pyspark/jars/derby-10.14.2.0.jar
 java.vendor=Oracle Corporation
 java.runtime.version=21.0.4+8-LTS-274
-user.dir=/Users/h0g01ex/Documents/Sourcecode/personal/python/bigdata/spark/pyspark-demos
+user.dir=/Users/krishna/Documents/Sourcecode/personal/python/bigdata/spark/pyspark-demos
 os.name=Mac OS X
 os.arch=aarch64
 os.version=15.3.1
