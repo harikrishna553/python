@@ -1,0 +1,86 @@
+LangChain is a framework for developing applications powered by large language models (LLMs).
+
+LangChain simplifies every stage of the LLM application lifecycle:
+
+Development: Build your applications using LangChain's open-source building blocks, components, and third-party integrations. Use LangGraph.js to build stateful agents with first-class streaming and human-in-the-loop support.
+Productionization: Use LangSmith to inspect, monitor and evaluate your chains, so that you can continuously optimize and deploy with confidence.
+Deployment: Turn your LangGraph applications into production-ready APIs and Assistants with LangGraph Cloud.
+
+Concretely, the framework consists of the following open-source libraries:
+
+@langchain/core: Base abstractions and LangChain Expression Language.
+@langchain/community: Third party integrations.
+Partner packages (e.g. @langchain/openai, @langchain/anthropic, etc.): Some integrations have been further split into their own lightweight packages that only depend on @langchain/core.
+langchain: Chains, agents, and retrieval strategies that make up an application's cognitive architecture.
+LangGraph.js: Build robust and stateful multi-actor applications with LLMs by modeling steps as edges and nodes in a graph.
+LangSmith: A developer platform that lets you debug, test, evaluate, and monitor LLM applications.
+
+Tutorials
+If you're looking to build something specific or are more of a hands-on learner, check out our tutorials. This is the best place to get started.
+
+These are the best ones to get started with:
+
+Build a Simple LLM Application
+Build a Chatbot
+Build an Agent
+LangGraph.js quickstart
+Explore the full list of LangChain tutorials here, and check out other LangGraph tutorials here.
+
+LangChain is a framework for developing applications powered by large language models (LLMs).
+
+LangChain simplifies every stage of the LLM application lifecycle:
+
+Development: Build your applications using LangChain's open-source building blocks, components, and third-party integrations. Use LangGraph.js to build stateful agents with first-class streaming and human-in-the-loop support.
+Productionization: Use LangSmith to inspect, monitor and evaluate your chains, so that you can continuously optimize and deploy with confidence.
+Deployment: Turn your LangGraph applications into production-ready APIs and Assistants with LangGraph Cloud.
+
+Concretely, the framework consists of the following open-source libraries:
+
+@langchain/core: Base abstractions and LangChain Expression Language.
+@langchain/community: Third party integrations.
+Partner packages (e.g. @langchain/openai, @langchain/anthropic, etc.): Some integrations have been further split into their own lightweight packages that only depend on @langchain/core.
+langchain: Chains, agents, and retrieval strategies that make up an application's cognitive architecture.
+LangGraph.js: Build robust and stateful multi-actor applications with LLMs by modeling steps as edges and nodes in a graph.
+LangSmith: A developer platform that lets you debug, test, evaluate, and monitor LLM applications.
+
+Tutorials
+If you're looking to build something specific or are more of a hands-on learner, check out our tutorials. This is the best place to get started.
+
+These are the best ones to get started with:
+
+Build a Simple LLM Application
+Build a Chatbot
+Build an Agent
+LangGraph.js quickstart
+Explore the full list of LangChain tutorials here, and check out other LangGraph tutorials here.
+
+
+LangChain is a framework for developing applications powered by large language models (LLMs).
+
+LangChain simplifies every stage of the LLM application lifecycle:
+
+Development: Build your applications using LangChain's open-source building blocks, components, and third-party integrations. Use LangGraph.js to build stateful agents with first-class streaming and human-in-the-loop support.
+Productionization: Use LangSmith to inspect, monitor and evaluate your chains, so that you can continuously optimize and deploy with confidence.
+Deployment: Turn your LangGraph applications into production-ready APIs and Assistants with LangGraph Cloud.
+
+Concretely, the framework consists of the following open-source libraries:
+
+@langchain/core: Base abstractions and LangChain Expression Language.
+@langchain/community: Third party integrations.
+Partner packages (e.g. @langchain/openai, @langchain/anthropic, etc.): Some integrations have been further split into their own lightweight packages that only depend on @langchain/core.
+langchain: Chains, agents, and retrieval strategies that make up an application's cognitive architecture.
+LangGraph.js: Build robust and stateful multi-actor applications with LLMs by modeling steps as edges and nodes in a graph.
+LangSmith: A developer platform that lets you debug, test, evaluate, and monitor LLM applications.
+
+Tutorials
+If you're looking to build something specific or are more of a hands-on learner, check out our tutorials. This is the best place to get started.
+
+These are the best ones to get started with:
+
+Build a Simple LLM Application
+Build a Chatbot
+Build an Agent
+LangGraph.js quickstart
+Explore the full list of LangChain tutorials here, and check out other LangGraph tutorials here.
+
+
