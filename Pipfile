@@ -6,6 +6,7 @@ name = "pypi"
 [packages]
 pypdf = "*"
 bs4 = "*"
+langchain-text-splitters = "*"
 
 [dev-packages]
 
