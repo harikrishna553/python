@@ -7,8 +7,10 @@ name = "pypi"
 langchain = "*"
 langchain-community = "*"
 langchainhub = "*"
-langchain-ollama = "*"
 python-dotenv = "*"
+chromadb = "*"
+ollama = "*"
+langchain-ollama = "*"
 
 [dev-packages]
 
