@@ -11,6 +11,7 @@ python-dotenv = "*"
 chromadb = "*"
 ollama = "*"
 langchain-ollama = "*"
+faiss-cpu = "*"
 
 [dev-packages]
 
