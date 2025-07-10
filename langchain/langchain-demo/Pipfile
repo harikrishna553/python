@@ -12,6 +12,7 @@ chromadb = "*"
 ollama = "*"
 langchain-ollama = "*"
 faiss-cpu = "*"
+langsmith = "*"
 
 [dev-packages]
 
