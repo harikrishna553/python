@@ -13,6 +13,9 @@ ollama = "*"
 langchain-ollama = "*"
 faiss-cpu = "*"
 langsmith = "*"
+fastapi = "*"
+uvicorn = "*"
+langserve = "*"
 
 [dev-packages]
 
