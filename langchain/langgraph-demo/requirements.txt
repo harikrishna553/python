@@ -1,1 +1,6 @@
 langgraph
+langchain
+langchain-core
+langchain-community
+langchain-ollama
+typing
